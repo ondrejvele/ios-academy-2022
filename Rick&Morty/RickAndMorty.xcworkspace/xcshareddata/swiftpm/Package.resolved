@@ -8,6 +8,15 @@
         "revision" : "b83c0ee762957f3e1871e9268b9013c75b866c01",
         "version" : "1.0.2"
       }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage",
+      "state" : {
+        "revision" : "3e48cb68d8e668d146dc59c73fb98cb628616236",
+        "version" : "5.13.2"
+      }
     }
   ],
   "version" : 2
