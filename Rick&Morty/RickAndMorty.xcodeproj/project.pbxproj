@@ -28,8 +28,7 @@
 		27FAC45F2479D452002F2A33 /* ManagerRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAC4282479D452002F2A33 /* ManagerRegistration.swift */; };
 		2F240E6E21B185FA00E93D36 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F240E6D21B185FA00E93D36 /* R.generated.swift */; };
 		756043300B384236749A0F8A /* Pods_defaults_RickAndMorty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33454648722DD949C227FA4E /* Pods_defaults_RickAndMorty.framework */; };
-		9752F1B8288C4A03001B6E94 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9752F1B7288C4A03001B6E94 /* SDWebImage */; };
-		9752F1BA288C4A03001B6E94 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9752F1B9288C4A03001B6E94 /* SDWebImageMapKit */; };
+		9752F1C0288C53A1001B6E94 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9752F1BF288C53A1001B6E94 /* SDWebImageSwiftUI */; };
 		AD28704D2809A0DA0080AD7F /* DependencyInjection in Frameworks */ = {isa = PBXBuildFile; productRef = AD28704C2809A0DA0080AD7F /* DependencyInjection */; };
 		AD3D6682283BB32F000C8BAA /* UIBackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3D6681283BB32F000C8BAA /* UIBackgroundGradientView.swift */; };
 		AD5D11AF28354122004F7774 /* UITableView+RegistrationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D11A628354122004F7774 /* UITableView+RegistrationHelpers.swift */; };
@@ -160,9 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9752F1B8288C4A03001B6E94 /* SDWebImage in Frameworks */,
+				9752F1C0288C53A1001B6E94 /* SDWebImageSwiftUI in Frameworks */,
 				756043300B384236749A0F8A /* Pods_defaults_RickAndMorty.framework in Frameworks */,
-				9752F1BA288C4A03001B6E94 /* SDWebImageMapKit in Frameworks */,
 				AD28704D2809A0DA0080AD7F /* DependencyInjection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,8 +555,7 @@
 			name = RickAndMorty;
 			packageProductDependencies = (
 				AD28704C2809A0DA0080AD7F /* DependencyInjection */,
-				9752F1B7288C4A03001B6E94 /* SDWebImage */,
-				9752F1B9288C4A03001B6E94 /* SDWebImageMapKit */,
+				9752F1BF288C53A1001B6E94 /* SDWebImageSwiftUI */,
 			);
 			productName = STRVWeatherMVVM;
 			productReference = 2F2D361821B02C65001C1CC7 /* RickAndMorty (DEV).app */;
@@ -591,7 +588,7 @@
 			mainGroup = 2F2D360F21B02C65001C1CC7;
 			packageReferences = (
 				AD28704B2809A0DA0080AD7F /* XCRemoteSwiftPackageReference "ios-dependency-injection" */,
-				9752F1B6288C4A03001B6E94 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				9752F1BE288C53A0001B6E94 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 2F2D361921B02C65001C1CC7 /* Products */;
 			projectDirPath = "";
@@ -1298,12 +1295,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9752F1B6288C4A03001B6E94 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		9752F1BE288C53A0001B6E94 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 		AD28704B2809A0DA0080AD7F /* XCRemoteSwiftPackageReference "ios-dependency-injection" */ = {
@@ -1317,15 +1314,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9752F1B7288C4A03001B6E94 /* SDWebImage */ = {
+		9752F1BF288C53A1001B6E94 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9752F1B6288C4A03001B6E94 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		9752F1B9288C4A03001B6E94 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9752F1B6288C4A03001B6E94 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
+			package = 9752F1BE288C53A0001B6E94 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 		AD28704C2809A0DA0080AD7F /* DependencyInjection */ = {
 			isa = XCSwiftPackageProductDependency;
